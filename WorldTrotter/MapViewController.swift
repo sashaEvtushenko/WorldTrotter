@@ -49,14 +49,11 @@ class MapViewController: UIViewController {
         
         // Set up UISwitch
         pointsOfInterestSwitch = UISwitch()
-        
         pointsOfInterestSwitch.addTarget(self, action: #selector(showPoints(_:)), for: .valueChanged)
-        
         pointsOfInterestSwitch.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pointsOfInterestSwitch)
         pointsOfInterestSwitch.centerYAnchor.constraint(equalTo: pointsOfInterestLabel.safeAreaLayoutGuide.centerYAnchor).isActive = true
         pointsOfInterestSwitch.leadingAnchor.constraint(equalTo: pointsOfInterestLabel.safeAreaLayoutGuide.trailingAnchor, constant: 8).isActive = true
-        
     }
     
     override func viewDidLoad() {
